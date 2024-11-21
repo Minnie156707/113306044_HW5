@@ -1,0 +1,144 @@
+body {
+    background-color: #eeede1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    display: flex;
+    width: 900px;
+    height: 1150px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* 左側面板樣式 */
+.left-panel {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+}
+
+/* 照片區域 */
+.photo-panel {
+    height: 50%;
+    background-image: url('photo.jpg'); /* 替換為你的背景圖片 */
+    background-size: cover;
+    background-position: center;
+}
+
+/* 文字內容區域 */
+.text-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.text-content h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.text-content p, .text-content ul {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.nccu-icon {
+    width: 100px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+/* 右側面板樣式 */
+.right-panel {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-panel h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    color: #444;
+}
+
+/* 教育區域 */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.timeline-item .year {
+    font-weight: bold;
+    color: #333;
+}
+
+/* 作業列表區域 */
+.homework-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.homework-list a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.homework-list a:hover {
+    color: #004999;
+}
+
+/* 喜歡的音樂區域 */
+.music-gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.music-gallery img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+.music-gallery img:hover {
+    transform: scale(1.1);
+}
+
+.music-note {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
